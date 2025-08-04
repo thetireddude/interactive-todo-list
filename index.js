@@ -7,8 +7,6 @@ const test = document.getElementById('test')
 
 const todoList = document.querySelector('ul.todo-list')
 
-
-
 loadJSON()
 
 addBtn.addEventListener('click', addTodo)
