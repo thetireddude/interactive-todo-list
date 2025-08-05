@@ -14,10 +14,12 @@ A simple CRUD todo list web app created using HTML, CSS & JavaScript.
 
 ### 📝Add todos
 Add todos using the "Add Todo" button.
+### 🗑️Delete todos
+Delete individual todos. These changes persist in local storage.
 ### 💾Todo local storage
-All your todos are stored in local storage, and are loaded whenever you open the webpage.<br>Local storage is browser-exclusive however, so you will not see your todos in a different browser.
+All todos are stored in local storage, and are loaded in whenever you open the webpage.<br>Local storage is browser-exclusive however, so you will not see your stored todos in a different browser.
 ### 📱Responsive design
-Your todo list auto-updates when adding new todos.
+Your todo list auto-updates in response to adding/deleting todos.
 
 ## Preview
 
