@@ -1,6 +1,7 @@
 const input = document.querySelector('#input-todo')
 const addBtn = document.querySelector('#addBtn')
 const todoList = document.querySelector('ul.todo-list')
+const clearBtn = document.querySelector('button.clear')
 
 
 let todos = []
@@ -10,6 +11,12 @@ let todos = []
 loadJSON()
 
 addBtn.addEventListener('click', addTodo)
+
+clearBtn.addEventListener('click', () => {
+    todos.splice(0)
+    localStorage.clear()
+    todoList.replaceChildren()
+})
 
 
 function deleteTodo(event, child, id) {

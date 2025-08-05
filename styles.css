@@ -29,6 +29,14 @@ body {
   margin: 20px;
 }
 
+.clear {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
 .todo-list{
   margin: 0px;
   padding: 0px;
