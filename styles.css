@@ -29,10 +29,6 @@ body {
   margin: 20px;
 }
 
-.input-form form label {
-  width: 100px;
-}
-
 .todo-list{
   margin: 0px;
   padding: 0px;

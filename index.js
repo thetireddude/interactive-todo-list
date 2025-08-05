@@ -1,28 +1,49 @@
 const input = document.querySelector('#input-todo')
 const addBtn = document.querySelector('#addBtn')
-
-const todos = []
-
-const test = document.getElementById('test')
-
 const todoList = document.querySelector('ul.todo-list')
+
+
+let todos = []
+
+// localStorage.clear()
 
 loadJSON()
 
 addBtn.addEventListener('click', addTodo)
 
+
+function deleteTodo(event, child, id) {
+    child.remove()
+
+    const idx = todos.indexOf(id)
+    todos.splice(idx, 1)
+    storeJSON()
+
+    console.log(todos)
+
+}
+
 function addTodo() {
     const text = input.value
-    // test.innerHTML += `<h1>${text}</h1>`
-    todoList.innerHTML += `
-        <li class="todo">
-            <input type="checkbox" id="${text}">
-            <label for="${text}">${text}</label>
-        </li>
-    `
     input.value = ''
 
+    const newChild = document.createElement('li')
+    newChild.className = "todo"
+    newChild.innerHTML = 
+    `
+            <input type="checkbox" id="${text}">
+            <label for="${text}">${text}</label>
+            <div><button class="delete-todo">delete</button></div>
+    `
+    todoList.appendChild(newChild)
     todos.push(text)
+    console.log(todos)
+
+
+    const li = todoList.lastElementChild
+    const delBtn = li.querySelector('.delete-todo')
+    delBtn.addEventListener('click', () => deleteTodo(event, newChild, text))
+
     storeJSON()
 }
 
@@ -34,14 +55,22 @@ function loadJSON() {
         const list = JSON.parse(json)
 
         for (const x of list){
-            // test.innerHTML += `<h1>${x}</h1>`
-            todoList.innerHTML += `
-                <li class="todo">
+            const newChild = document.createElement('li')
+            newChild.className = "todo"
+            newChild.innerHTML = 
+            `
                     <input type="checkbox" id="${x}">
                     <label for="${x}">${x}</label>
-                </li>
+                    <div><button class="delete-todo">delete</button></div>
             `
+            todoList.appendChild(newChild)
             todos.push(x)
+            console.log(todos)
+
+            const li = todoList.lastElementChild
+            const delBtn = li.querySelector('.delete-todo')
+            delBtn.addEventListener('click', () => deleteTodo(event, newChild, x))
+
         }
     }
 }
@@ -49,6 +78,6 @@ function loadJSON() {
 function storeJSON() {
     const json = JSON.stringify(todos)
     localStorage.setItem('todos', json)
-    console.log(json)
+    console.log(`updated json: ${json}`)
 }
 
