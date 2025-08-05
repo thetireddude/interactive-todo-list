@@ -40,7 +40,7 @@ function addTodo() {
     `
             <input type="checkbox" id="${text}">
             <label for="${text}">${text}</label>
-            <div><button class="delete-todo">delete</button></div>
+            <div><button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button></div>
     `
     todoList.appendChild(newChild)
     todos.push(text)
@@ -68,7 +68,7 @@ function loadJSON() {
             `
                     <input type="checkbox" id="${x}">
                     <label for="${x}">${x}</label>
-                    <div><button class="delete-todo">delete</button></div>
+                    <div><button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button></div>
             `
             todoList.appendChild(newChild)
             todos.push(x)
