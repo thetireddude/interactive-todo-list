@@ -38,9 +38,17 @@ function addTodo() {
     newChild.className = "todo"
     newChild.innerHTML = 
     `
+        <label class="checkbox-label">
             <input type="checkbox" id="${text}">
-            <label for="${text}">${text}</label>
-            <div><button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button></div>
+            <i class="fa-regular fa-square unchecked"></i>
+            <i class="fa-regular fa-square-check checked"></i>
+            ${text}
+        </label>
+        <div class="todo-buttons">
+            <button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button>
+            <button class="edit-todo"><i class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+
     `
     todoList.appendChild(newChild)
     todos.push(text)
@@ -66,9 +74,16 @@ function loadJSON() {
             newChild.className = "todo"
             newChild.innerHTML = 
             `
-                    <input type="checkbox" id="${x}">
-                    <label for="${x}">${x}</label>
-                    <div><button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button></div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="${x}">
+                        <i class="fa-regular fa-square unchecked"></i>
+                        <i class="fa-regular fa-square-check checked"></i>
+                        ${x}
+                    </label>
+                    <div class="todo-buttons">
+                        <button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="edit-todo"><i class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
             `
             todoList.appendChild(newChild)
             todos.push(x)

@@ -62,24 +62,24 @@ body {
   margin-right: 20px;
 }
 
-.todo > label {
-  align-self: flex-start;
-  flex: 1;
-  margin-left: 5px;
-}
-
-.delete-todo {
+.delete-todo, .edit-todo{
   font-size: 18px;
+
   background: none;
   border: none;
+
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.delete-todo:hover {
+.delete-todo:hover, .edit-todo:hover{
   text-shadow: 3px 2px 10px #aeb5c6;
   transform: scale(1.15)
 
+}
+
+.delete-todo:active, .edit-todo:active {
+  transform: scale(1);
 }
 
 .sub-item{
@@ -89,6 +89,7 @@ body {
 }
 
 
+/* link behavior CSS styling */
 
 a {
   text-decoration: none;
@@ -109,4 +110,31 @@ a:active {
 
 a:focus {
   outline: 2px dotted orange;
+}
+
+/* checkbox CSS styling */
+.checkbox-label > input[type="checkbox"] {
+  appearance: none;
+}
+
+.checkbox-label .checked, .checkbox-label .unchecked{
+  transition: transform 0.2s ease;
+}
+.checkbox-label .checked:hover, .checkbox-label .unchecked:hover{
+  transform: scale(1.15)
+}
+.checkbox-label .checked:active, .checkbox-label .unchecked:active{
+  transform: scale(1)
+}
+
+.checkbox-label  .checked {
+  display: none;
+}
+
+.checkbox-label input[type="checkbox"]:checked ~ .checked {
+  display: inline;
+}
+
+.checkbox-label input[type="checkbox"]:checked ~ .unchecked {
+  display: none;
 }
