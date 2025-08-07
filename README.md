@@ -28,28 +28,21 @@ Your todo list auto-updates in response to adding/deleting/editing todos.
 ## Preview
 
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px">
-  <figure style="width: 25%; text-align: center; margin: 0;">
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmwxOWNzanFkZHQ4NzdoaHVhZXJ1Z3FuZjAzZzNuNXE3dHFtb2ExciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BtGdkROeXgSVPauHdF/giphy.gif" alt="Adding todos">
-    <figcaption>Add todos</figcaption>
-  </figure>
-  <figure style="width: 25%; text-align: center; margin: 0;">
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif" alt="Editing todos">
-    <figcaption>Edit todos</figcaption>
-  </figure>
-  <figure style="width: 25%; text-align: center; margin: 0;">
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif" alt="Deleting todos">
-    <figcaption>Delete todos</figcaption>
-  </figure>
-  <figure style="width: 25%; text-align: center; margin: 0;">
-    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif" alt="Clearing todos">
-    <figcaption>Clear todo list</figcaption>
-  </figure>
-  <figure style="width: 25%; text-align: center; margin: 0;">
-    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif" alt="Todos stored in local storage">
-    <figcaption>stored in local storage</figcaption>
-  </figure>
-</div>
+## Preview
+
+## Preview
+
+## Preview
+
+|   |   |   |
+|---|---|---|
+| <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBidzR0cWg1MTB3YWR6dWZqcmJucWg3NDk2Z3Uyd2w4eTBzOHpwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hY9VSbmjbJRVMT93t2/giphy.gif" alt="Adding todos"> | <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif" alt="Editing todos"> | <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif" alt="Deleting todos"> |
+| Add todos | Edit todos | Delete todos |
+
+|   |   |
+|---|---|
+| <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif" alt="Clearing todos"> | <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif" alt="Local storage"> |
+| Clear todo list | Local storage |
 
 **<br>Try the app out for yourself** --> (coming soon)
 
