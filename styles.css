@@ -45,9 +45,6 @@ body {
 }
 
 .todo {
-  display: flex;
-  justify-content: space-between;
-
   background-color: white;
   border-radius: 10px;
   font-size: 18px;
@@ -60,6 +57,22 @@ body {
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.edit-hide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  display: inline;
+}
+
+
+.input-edit #textbox{
+  font-size: 18px;
+  margin-left: 30px;
+  height: 18px;
 }
 
 .delete-todo, .edit-todo{
