@@ -27,26 +27,15 @@ Your todo list auto-updates in response to adding/deleting/editing todos.
 
 ## Preview
 
-![Adding Todos](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmwxOWNzanFkZHQ4NzdoaHVhZXJ1Z3FuZjAzZzNuNXE3dHFtb2ExciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BtGdkROeXgSVPauHdF/giphy.gif){height=50%}
-*<br>Add todos*
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmwxOWNzanFkZHQ4NzdoaHVhZXJ1Z3FuZjAzZzNuNXE3dHFtb2ExciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BtGdkROeXgSVPauHdF/giphy.gif" alt="Adding todos" height="50%">
 
-![Editing Todos](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif){height=50%}
-*<br>Edit todos*
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif" alt="Editing todos" height="50%">
 
-![Deleting Todos](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif){height=50%}
-*<br>Delete todos* 
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif" alt="Deleting todos" height="50%">
 
-![Clearing Todos](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif){height=50%}
-*<br>Clear todos* 
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif" alt="Clearing todos" height="50%">
 
-![Clearing Todos](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif){height=50%}
-*<br>Todos saved to local storage* 
-
-
-
-
-
-
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif" alt="Todos stored in local storage" height="50%">
 
 **Try the app out for yourself** --> (coming soon)
 
