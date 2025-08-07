@@ -14,14 +14,16 @@ A simple CRUD todo list web app created using HTML, CSS & JavaScript.
 
 ### 📝Add todos
 Add todos using the "Add Todo" button.
+### ✏️Edit todos
+Edit individual todos using the edit icon. Press enter to confirm changes. Changes persist in local storage.
 ### 🗑️Delete todos
 Delete individual todos. Changes persist in local storage.
 ### 🧹Clear todo list
-Delete all todos in your list with a single click. This change reflects in local storage.
+Remove all todos from your list with a single click. This will reflect in local storage.
 ### 💾Todo local storage
-All todos are stored in local storage, and are loaded in whenever you open the webpage.<br>Local storage is browser-exclusive however, so you will not see your stored todos in a different browser.
+All todos are stored in local storage, and are loaded in whenever you open the webpage.<br>Local storage is browser-exclusive however, so stored todos will not be seen in a different browser.
 ### 📱Responsive design
-Your todo list auto-updates in response to adding/deleting todos.
+Your todo list auto-updates in response to adding/deleting/editing todos.
 
 ## Preview
 
