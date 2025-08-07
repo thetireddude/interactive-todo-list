@@ -2,7 +2,7 @@
 
 A simple CRUD todo list web app created using HTML, CSS & JavaScript.
 
-### 🚧 **In Progress** 🚧 ###
+### 🚧 **Core App Complete** 🚧 ###
 
 ## Table of Contents
 - [Features](#features)
