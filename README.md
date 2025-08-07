@@ -7,7 +7,7 @@ A simple CRUD todo list web app created using HTML, CSS & JavaScript.
 ## Table of Contents
 - [Features](#features)
 - [Preview](#preview)
-- [Running the App](#running-the-web-app-locally)
+- [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
 
 ## Features
@@ -27,11 +27,30 @@ Your todo list auto-updates in response to adding/deleting/editing todos.
 
 ## Preview
 
-![Adding Todos](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExamd0ejZrNnF0aG1obTVyYjJyNmc2eWtpazVrYnI4YnFvbWN4bzJqaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NsMZQvRR3RpzGdI5WF/giphy.gif)
+![Adding Todos](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmwxOWNzanFkZHQ4NzdoaHVhZXJ1Z3FuZjAzZzNuNXE3dHFtb2ExciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BtGdkROeXgSVPauHdF/giphy.gif)
+*<br>Add todos*
+
+![Editing Todos](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif)
+*<br>Edit todos*
+
+![Deleting Todos](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif)
+*<br>Delete todos* 
+
+![Clearing Todos](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif)
+*<br>Clear todos* 
+
+![Clearing Todos](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif)
+*<br>Todos saved to local storage* 
+
+
+
+
+
+
 
 **Try the app out for yourself** --> (coming soon)
 
-## Running the Web App Locally 
+## Getting Started
 This project doesn't require any prerequisites or installations of any kind since its runs on vanilla HTML, CSS and JavaScript.
 
 ### Steps
