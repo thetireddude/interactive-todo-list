@@ -15,7 +15,9 @@ A simple CRUD todo list web app created using HTML, CSS & JavaScript.
 ### 📝Add todos
 Add todos using the "Add Todo" button.
 ### 🗑️Delete todos
-Delete individual todos. These changes persist in local storage.
+Delete individual todos. Changes persist in local storage.
+### 🧹Clear todo list
+Delete all todos in your list with a single click. This change reflects in local storage.
 ### 💾Todo local storage
 All todos are stored in local storage, and are loaded in whenever you open the webpage.<br>Local storage is browser-exclusive however, so you will not see your stored todos in a different browser.
 ### 📱Responsive design
