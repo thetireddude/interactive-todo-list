@@ -30,7 +30,7 @@ Your todo list auto-updates in response to adding/deleting/editing todos.
 
 |   |   |   |
 |---|---|---|
-| <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBidzR0cWg1MTB3YWR6dWZqcmJucWg3NDk2Z3Uyd2w4eTBzOHpwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hY9VSbmjbJRVMT93t2/giphy.gif" alt="Adding todos" width="1100"> | <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif" alt="Editing todos"> | <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif" alt="Deleting todos"> |
+| <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnBidzR0cWg1MTB3YWR6dWZqcmJucWg3NDk2Z3Uyd2w4eTBzOHpwNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hY9VSbmjbJRVMT93t2/giphy.gif" alt="Adding todos" width="300"> | <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzB2azVmNHVlOGIwbzFvajMxdW9mbTY4enp2bjkxdHNyMHBqNDNjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cgAU9wvfitSmFSTEpB/giphy.gif" alt="Editing todos"> | <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQ0c2xzN3Npend2YWNmMTQweHZmZnFpMGRvcXpyaTNic2kzZGs1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XIMxwCHaWqqaYItjOC/giphy.gif" alt="Deleting todos"> |
 | Add todos | Edit todos | Delete todos |
 
 |   |   |
