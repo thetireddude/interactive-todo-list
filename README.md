@@ -2,7 +2,12 @@
 
 A simple CRUD todo list web app created using HTML, CSS & JavaScript.
 
-### 🚧 **Core App Complete** 🚧 ###
+<div align="center">
+   <h2> 🚧 Core App Complete 🚧 </h2>
+    <a href="https://tired-todo-list.netlify.app" target="_blank">
+        <img src="https://img.shields.io/badge/🚀_TRY_THE_APP-79D6E8?style=for-the-badge&logoColor=white&labelColor=79D6E8" alt="Try The App" width="210">
+    </a>
+</div>
 
 ## Table of Contents
 - [Features](#features)
@@ -35,10 +40,16 @@ Your todo list auto-updates in response to adding/deleting/editing todos.
 
 |   |   |
 |---|---|
-| <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif" alt="Clearing todos"> | <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif" alt="Local storage"> |
+| <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazM5bGVjemRpZnphN3ljenl5N3ppbHRwZDRkN280M2IzZ245czBwNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ods2ecGS58e87QnER1/giphy.gif" alt="Clearing todos" width="250"> | <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm91MWc3Z2FyMnZvczFnb2p3YWhmczA1NGRwOTFxbW1iMzljM2Y0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1YDBAtb1SNwF6NLRB/giphy.gif" alt="Local storage" width="250"> |
 | Clear todo list | Local storage |
 
-**<br>Try the app out for yourself** --> (coming soon)
+<br>
+<div align="center">
+    <a href="https://tired-todo-list.netlify.app" target="_blank">
+        <img src="https://img.shields.io/badge/🚀_TRY_THE_APP-79D6E8?style=for-the-badge&logoColor=white&labelColor=79D6E8" alt="Try The App" width="210">
+    </a>
+</div>
+<br>
 
 ## Getting Started
 This project doesn't require any prerequisites or installations of any kind since its runs on vanilla HTML, CSS and JavaScript.
@@ -68,7 +79,7 @@ This project doesn't require any prerequisites or installations of any kind sinc
 ### Tools & Services
 - Git & GitHub
 - VS Code
-- Deployment platform (Coming Soon❕)
+- Deployment platform: Netlify
 
 ---
 
