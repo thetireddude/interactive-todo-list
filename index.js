@@ -2,36 +2,48 @@ const input = document.querySelector('#input-todo')
 const addBtn = document.querySelector('#addBtn')
 const todoList = document.querySelector('ul.todo-list')
 const clearBtn = document.querySelector('button.clear')
-
+const summary = document.querySelector('.todo-summary')
+const emptyState = document.querySelector('.empty-state')
 
 let todos = []
-
-// localStorage.clear()
 
 loadJSON()
 
 addBtn.addEventListener('click', addTodo)
 
 clearBtn.addEventListener('click', () => {
-    todos.splice(0)
-    localStorage.clear()
+    todos = []
+    storeJSON()
     todoList.replaceChildren()
+    renderStatus()
 })
 
-function deleteTodo(event, child, id) {
-    child.remove()
+function renderStatus() {
+    const total = todos.length
+    const completed = todos.filter((todo) => todo.completed).length
+    const active = total - completed
 
-    const idx = todos.indexOf(id)
-    todos.splice(idx, 1)
-    storeJSON()
+    summary.textContent = `${active} active • ${completed} done`
 
-    console.log(todos)
-
+    if (total === 0) {
+        emptyState.classList.remove('hidden')
+    } else {
+        emptyState.classList.add('hidden')
+    }
 }
 
-function editTodo(event, child){
-    console.log('editing')
+function deleteTodo(child, id) {
+    child.remove()
 
+    const idx = todos.findIndex((todo) => todo.id === id)
+    if (idx >= 0) {
+        todos.splice(idx, 1)
+    }
+    storeJSON()
+    renderStatus()
+}
+
+function editTodo(child, id) {
     const hidden = child.querySelector('.edit-hide')
     hidden.style.display = 'none'
 
@@ -39,116 +51,129 @@ function editTodo(event, child){
     const todoText = childText.textContent.trim()
 
     const newChild = document.createElement('div')
-    newChild.innerHTML = 
-    `
-        <input type="text" id="textbox">
-    `
-    newChild.className = "input-edit"
+    newChild.innerHTML = '<input type="text" id="textbox">'
+    newChild.className = 'input-edit'
     const textbox = newChild.querySelector('#textbox')
     textbox.value = todoText
 
     child.appendChild(newChild)
-    
+    textbox.focus()
+
     textbox.addEventListener('keypress', function(event) {
-        if(event.key === "Enter") {
-            console.log("enter was pressed")
+        if (event.key === 'Enter') {
+            const updatedTodo = textbox.value.trim()
+            if (updatedTodo.length === 0) {
+                return
+            }
 
-            const new_todo = textbox.value
-            childText.innerHTML = `${new_todo}`
+            childText.innerHTML = `${updatedTodo}`
 
-            const idx = todos.indexOf(todoText)
-            todos[idx] = new_todo
+            const idx = todos.findIndex((todo) => todo.id === id)
+            if (idx >= 0) {
+                todos[idx].text = updatedTodo
+            }
             storeJSON()
 
             newChild.remove()
             hidden.style.display = 'flex'
         }
-        
     })
 }
 
-function addTodo() {
-    const text = input.value
-    input.value = ''
+function toggleTodo(id, checked, item) {
+    const idx = todos.findIndex((todo) => todo.id === id)
+    if (idx >= 0) {
+        todos[idx].completed = checked
+    }
 
-    const newChild = document.createElement('li')
-    newChild.className = "todo"
-    newChild.innerHTML = 
-    `   
-        <div class="edit-hide">
-            <label class="checkbox-label">
-                <input type="checkbox" id="${text}">
-                <i class="fa-regular fa-square unchecked"></i>
-                <i class="fa-regular fa-square-check checked"></i>
-                <div class="text">
-                ${text}
-                </div>
-            </label>
-            <div class="todo-buttons">
-                <button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button>
-                <button class="edit-todo"><i class="fa-solid fa-pen-to-square"></i></button>
-            </div>
-        </div>
-
-    `
-    todoList.appendChild(newChild)
-    todos.push(text)
-    console.log(todos)
-
-
-    const li = todoList.lastElementChild
-    const delBtn = li.querySelector('.delete-todo')
-    const editBtn = li.querySelector(".edit-todo")
-    delBtn.addEventListener('click', () => deleteTodo(event, newChild, text))
-    editBtn.addEventListener('click', () => editTodo(event, newChild))
+    if (checked) {
+        item.classList.add('completed')
+    } else {
+        item.classList.remove('completed')
+    }
 
     storeJSON()
+    renderStatus()
+}
+
+function createTodoElement(todo) {
+    const item = document.createElement('li')
+    item.className = `todo ${todo.completed ? 'completed' : ''}`
+    item.innerHTML =
+    `
+        <div class="edit-hide">
+            <label class="checkbox-label">
+                <input type="checkbox" id="${todo.id}" ${todo.completed ? 'checked' : ''}>
+                <i class="fa-regular fa-square unchecked"></i>
+                <i class="fa-regular fa-square-check checked"></i>
+                <div class="text">${todo.text}</div>
+            </label>
+            <div class="todo-buttons">
+                <button class="delete-todo" aria-label="Delete todo"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="edit-todo" aria-label="Edit todo"><i class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+        </div>
+    `
+
+    const checkbox = item.querySelector('input[type="checkbox"]')
+    const delBtn = item.querySelector('.delete-todo')
+    const editBtn = item.querySelector('.edit-todo')
+
+    checkbox.addEventListener('change', (event) => toggleTodo(todo.id, event.target.checked, item))
+    delBtn.addEventListener('click', () => deleteTodo(item, todo.id))
+    editBtn.addEventListener('click', () => editTodo(item, todo.id))
+
+    return item
+}
+
+function addTodo() {
+    const text = input.value.trim()
+    if (!text) {
+        return
+    }
+
+    input.value = ''
+
+    const todo = {
+        id: crypto.randomUUID(),
+        text,
+        completed: false,
+    }
+
+    todoList.appendChild(createTodoElement(todo))
+    todos.push(todo)
+
+    storeJSON()
+    renderStatus()
 }
 
 function loadJSON() {
     const json = localStorage.getItem('todos')
-    console.log(`stored json:\n ${json}`)
 
     if (json != null) {
-        const list = JSON.parse(json)
+        const parsed = JSON.parse(json)
 
-        for (const x of list){
-            const newChild = document.createElement('li')
-            newChild.className = "todo"
-            newChild.innerHTML = 
-            `
-                <div class="edit-hide">
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="${x}">
-                        <i class="fa-regular fa-square unchecked"></i>
-                        <i class="fa-regular fa-square-check checked"></i>
-                        <div class="text">
-                        ${x}
-                        </div>
-                    </label>
-                    <div class="todo-buttons">
-                        <button class="delete-todo"><i class="fa-solid fa-trash-can"></i></button>
-                        <button class="edit-todo"><i class="fa-solid fa-pen-to-square"></i></button>
-                    </div>
-                </div>
-            `
-            todoList.appendChild(newChild)
-            todos.push(x)
-            console.log(todos)
+        todos = parsed.map((todo) => {
+            if (typeof todo === 'string') {
+                return { id: crypto.randomUUID(), text: todo, completed: false }
+            }
 
-            const li = todoList.lastElementChild
-            const delBtn = li.querySelector('.delete-todo')
-            const editBtn = li.querySelector('.edit-todo')
-            delBtn.addEventListener('click', () => deleteTodo(event, newChild, x))
-            editBtn.addEventListener('click', () => editTodo(event, newChild))
+            return {
+                id: todo.id ?? crypto.randomUUID(),
+                text: todo.text ?? '',
+                completed: Boolean(todo.completed),
+            }
+        }).filter((todo) => todo.text)
 
+        for (const todo of todos) {
+            todoList.appendChild(createTodoElement(todo))
         }
     }
+
+    renderStatus()
 }
 
 function storeJSON() {
     const json = JSON.stringify(todos)
     localStorage.setItem('todos', json)
-    console.log(`updated json: ${json}`)
 }
-
